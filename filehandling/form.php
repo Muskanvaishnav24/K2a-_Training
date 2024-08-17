@@ -38,6 +38,7 @@
     h2 {
       color: #00008b; /* Dark blue color */
     }
+    
   </style>
 </head>
 
@@ -45,18 +46,18 @@
   <div class="container">
     <div class="form-container">
       <h2 class="text-center">Personal Information Section</h2>
-      <form>
+      <form class="form-horizontal">
         
         <!-- Name (Required) -->
         <div class="form-group">
-          <label for="name" class="form-label required">Name:</label>
-          <input type="text" id="name" name="name" class="form-control" required>
+          <label for ="name" class="form-label required">Name:</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name here" required>
         </div>
         
         <!-- Email -->
         <div class="form-group">
           <label for="email" class="form-label required">Email:</label>
-          <input type="email" id="email" name="email" class="form-control" required>
+          <input type="email" id="email" name="email" class="form-control" placeholder="example@gmail.com"required>
         </div>
         
         <!-- Password -->
@@ -101,7 +102,7 @@
         <!-- Address -->
         <div class="form-group">
           <label for="address" class="form-label required">Address:</label>
-          <input type="text" id="address" name="address" class="form-control" required>
+          <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address here " required>
         </div>
         
         <!-- City -->
@@ -161,7 +162,7 @@
         </div>
         
         <!-- Submit Button -->
-        <div class="form-group">
+        <div class="form-group text-center">
           <input type="submit" value="Submit" class="btn btn-primary">
           <input type="reset" value="Reset" class="btn btn-danger ">
         </div>
@@ -169,6 +170,7 @@
     </div>
   </div>
 
+  
   <!-- Bootstrap JS (Optional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
